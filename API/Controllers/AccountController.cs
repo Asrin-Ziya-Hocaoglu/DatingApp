@@ -35,7 +35,7 @@ namespace API.Controllers
             using var hmac = new HMACSHA512();
             var user = new AppUser
             {
-                UserName = registerDto.UserName.ToLower(),
+                Username = registerDto.UserName.ToLower(),
                 PasswordHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(registerDto.Password)),
                 PasswordSalt = hmac.Key
             };
@@ -43,7 +43,7 @@ namespace API.Controllers
             await _context.SaveChangesAsync();
             return new UserDto
             {
-                UserName = user.UserName,
+                Username = user.Username,
                 Token = _tokenService.CreateToken(user)
             };
         }
@@ -51,7 +51,7 @@ namespace API.Controllers
         [HttpPost("Login")]
         public async Task<ActionResult<UserDto>> Login(LoginDto loginDto)
         {
-            var user = await _context.AppUsers.SingleOrDefaultAsync(x=>x.UserName==loginDto.UserName.ToLower());
+            var user = await _context.AppUsers.SingleOrDefaultAsync(x=>x.Username==loginDto.Username.ToLower());
             if(user == null)
             {
                 return Unauthorized("Invalid Username");
@@ -70,7 +70,7 @@ namespace API.Controllers
                 }
             }
             return new UserDto{
-                UserName=user.UserName,
+                Username=user.Username,
                 Token = _tokenService.CreateToken(user)
             };
 
@@ -80,7 +80,7 @@ namespace API.Controllers
 
         private async Task<bool> UserExists(string userName)
         {
-            return await _context.AppUsers.AnyAsync(x=>x.UserName == userName.ToLower());
+            return await _context.AppUsers.AnyAsync(x=>x.Username == userName.ToLower());
         }
     }
 }
