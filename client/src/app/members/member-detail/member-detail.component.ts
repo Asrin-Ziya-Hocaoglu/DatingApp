@@ -1,4 +1,4 @@
-import { SimplePlaceholderMapper } from '@angular/compiler/src/i18n/serializers/serializer';
+// import { SimplePlaceholderMapper } from '@angular/compiler/src/i18n/serializers/serializer';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { NgxGalleryAnimation, NgxGalleryImage, NgxGalleryOptions } from '@kolkov/ngx-gallery';
