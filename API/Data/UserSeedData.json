@@ -1,6 +1,6 @@
 [
     {
-      "UserName": "Terra",
+      "Username": "Terra",
       "Gender": "female",
       "DateOfBirth": "1971-12-07",
       "KnownAs": "Terra",
@@ -19,7 +19,7 @@
       ]
     },
     {
-      "UserName": "Virgie",
+      "Username": "Virgie",
       "Gender": "female",
       "DateOfBirth": "1968-04-08",
       "KnownAs": "Virgie",
@@ -38,7 +38,7 @@
       ]
     },
     {
-      "UserName": "Caroline",
+      "Username": "Caroline",
       "Gender": "female",
       "DateOfBirth": "1968-01-21",
       "KnownAs": "Caroline",
@@ -57,7 +57,7 @@
       ]
     },
     {
-      "UserName": "Mable",
+      "Username": "Mable",
       "Gender": "female",
       "DateOfBirth": "1990-09-03",
       "KnownAs": "Mable",
@@ -76,7 +76,7 @@
       ]
     },
     {
-      "UserName": "Letha",
+      "Username": "Letha",
       "Gender": "female",
       "DateOfBirth": "1988-07-30",
       "KnownAs": "Letha",
@@ -95,7 +95,7 @@
       ]
     },
         {
-          "UserName": "Snow",
+          "Username": "Snow",
           "Gender": "male",
           "DateOfBirth": "1996-09-22",
           "KnownAs": "Snow",
@@ -114,7 +114,7 @@
           ]
         },
         {
-          "UserName": "Rutledge",
+          "Username": "Rutledge",
           "Gender": "male",
           "DateOfBirth": "1967-11-12",
           "KnownAs": "Rutledge",
@@ -133,7 +133,7 @@
           ]
         },
         {
-          "UserName": "Gonzales",
+          "Username": "Gonzales",
           "Gender": "male",
           "DateOfBirth": "1993-08-06",
           "KnownAs": "Gonzales",
@@ -152,7 +152,7 @@
           ]
         },
         {
-          "UserName": "Huff",
+          "Username": "Huff",
           "Gender": "male",
           "DateOfBirth": "1978-08-02",
           "KnownAs": "Huff",
@@ -171,7 +171,7 @@
           ]
         },
         {
-          "UserName": "Park",
+          "Username": "Park",
           "Gender": "male",
           "DateOfBirth": "1970-03-10",
           "KnownAs": "Park",
@@ -185,7 +185,7 @@
           "Photos": [
             {
               "Url": "https://randomuser.me/api/portraits/men/62.jpg",
-              "isMain": true
+              "IsMain": true
             }
           ]
         }
