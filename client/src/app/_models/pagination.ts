@@ -1,6 +1,6 @@
 export interface Pagination{
     currentPage: number;
-    itemsPerPage: number;
+    itemsPage: number;
     totalItems: number;
     totalPages: number;
 
