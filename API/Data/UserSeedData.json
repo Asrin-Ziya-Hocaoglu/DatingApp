@@ -1,6 +1,6 @@
 [
     {
-      "Username": "Terra",
+      "UserName": "Terra",
       "Gender": "female",
       "DateOfBirth": "1971-12-07",
       "KnownAs": "Terra",
@@ -19,7 +19,7 @@
       ]
     },
     {
-      "Username": "Virgie",
+      "UserName": "Virgie",
       "Gender": "female",
       "DateOfBirth": "1968-04-08",
       "KnownAs": "Virgie",
@@ -38,7 +38,7 @@
       ]
     },
     {
-      "Username": "Caroline",
+      "UserName": "Caroline",
       "Gender": "female",
       "DateOfBirth": "1968-01-21",
       "KnownAs": "Caroline",
@@ -57,7 +57,7 @@
       ]
     },
     {
-      "Username": "Mable",
+      "UserName": "Mable",
       "Gender": "female",
       "DateOfBirth": "1990-09-03",
       "KnownAs": "Mable",
@@ -76,7 +76,7 @@
       ]
     },
     {
-      "Username": "Letha",
+      "UserName": "Letha",
       "Gender": "female",
       "DateOfBirth": "1988-07-30",
       "KnownAs": "Letha",
@@ -95,7 +95,7 @@
       ]
     },
         {
-          "Username": "Snow",
+          "UserName": "Snow",
           "Gender": "male",
           "DateOfBirth": "1996-09-22",
           "KnownAs": "Snow",
@@ -114,7 +114,7 @@
           ]
         },
         {
-          "Username": "Rutledge",
+          "UserName": "Rutledge",
           "Gender": "male",
           "DateOfBirth": "1967-11-12",
           "KnownAs": "Rutledge",
@@ -133,7 +133,7 @@
           ]
         },
         {
-          "Username": "Gonzales",
+          "UserName": "Gonzales",
           "Gender": "male",
           "DateOfBirth": "1993-08-06",
           "KnownAs": "Gonzales",
@@ -152,7 +152,7 @@
           ]
         },
         {
-          "Username": "Huff",
+          "UserName": "Huff",
           "Gender": "male",
           "DateOfBirth": "1978-08-02",
           "KnownAs": "Huff",
@@ -171,7 +171,7 @@
           ]
         },
         {
-          "Username": "Park",
+          "UserName": "Park",
           "Gender": "male",
           "DateOfBirth": "1970-03-10",
           "KnownAs": "Park",
