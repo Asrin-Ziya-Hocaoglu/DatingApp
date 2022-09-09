@@ -19,10 +19,10 @@ namespace API.Helpers
             }
             
             var userId = resultContext.HttpContext.User.GetUserId();
-            var repo = resultContext.HttpContext.RequestServices.GetService<IUserRepository>(); // getting repository with resultcontext => Service Locator Pattern
-            var user = await repo.GetUserByIdAsync(userId);
-            user.LastActive = DateTime.Now;
-            await repo.SaveAllAsync();
+            var uow = resultContext.HttpContext.RequestServices.GetService<IUnitOfWork>(); // getting repository with resultcontext => Service Locator Pattern
+            var user = await uow.UserRepository.GetUserByIdAsync(userId);
+            user.LastActive = DateTime.UtcNow;
+            await uow.Complete();
 
 
             
