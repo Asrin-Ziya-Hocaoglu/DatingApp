@@ -13,6 +13,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
+
 namespace API.Controllers
 {
     public class AccountController : BaseApiController
@@ -21,12 +22,14 @@ namespace API.Controllers
         private readonly IMapper  _mapper;
         private readonly UserManager<AppUser> _userManager;
         private readonly SignInManager<AppUser> _signInManager;
-        public AccountController(UserManager<AppUser> userManager,SignInManager<AppUser> signInManager,ITokenService tokenService, IMapper mapper)
+        private readonly ILogger _logger;
+        public AccountController(UserManager<AppUser> userManager,SignInManager<AppUser> signInManager,ITokenService tokenService, IMapper mapper,ILogger<AccountController> logger  )
         {
             _tokenService = tokenService;
             _userManager = userManager;
-            _mapper = mapper;
+            _mapper = mapper;                                    
             _signInManager = signInManager;
+            _logger =logger;
 
         }
 
@@ -85,7 +88,10 @@ namespace API.Controllers
             {
                 return Unauthorized();
             }
-
+            
+            _logger.LogInformation("giris yapıldı");
+            _logger.LogError("Hatalı giris yapıldı");
+            
                       
             return new UserDto{
                 Username=user.UserName,
