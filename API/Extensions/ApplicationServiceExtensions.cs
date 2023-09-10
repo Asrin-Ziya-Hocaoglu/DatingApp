@@ -10,6 +10,7 @@ using API.Data;
 using Microsoft.EntityFrameworkCore;
 using API.Helpers;
 using API.SignalR;
+using Microsoft.Extensions.Caching.Memory;
 
 namespace API.Extensions
 {
